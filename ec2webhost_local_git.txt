@@ -1,0 +1,45 @@
+7)---Hosting Website on EC2---
+EC2 -- launch instance -- HTTP,HTTPS,SSH
+copy IPv4 -- bitvise host--key
+terminal
+sudo apt-get update -y
+sudo apt-get upgrade -y
+sudo apt-get install nginx -y
+
+sudo systemctl start nginx
+sudo systemctl enable nginx
+
+SFTP 
+cd ..
+cd /var
+cd www
+sudo chmod 777 html
+
+8)--Deploy Project (Local ↔ GitHub)--
+
+ git -- newrepo -- setting -- dev setting 
+ personal access token -- classic generate newtoken
+ copy the path
+ destop folder -- rc -- more option -- gitbash
+ git init
+ 
+git config --global user.name "LABANI"
+git config --global user.email "labanipandit141@gmail.com"
+git add .
+git commit -m "Uploading static website"
+git remote add origin https://github.com/labanipandit/awstest.git (repolink)
+git branch -M main
+git push -u origin main
+git remote remove origin(if wrong repo entry)
+git add .
+git commit -m "trigger"
+git push
+--  --
+git clone repolink
+cd aws/
+ls
+git add .
+git commit -m "uploading files"
+git push
+git pull origin main 
+

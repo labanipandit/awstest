@@ -1,0 +1,143 @@
+AWS Account Creation + Budget
+🔷PART A: Create AWS Account
+Step 1:
+
+Go to:
+👉 https://aws.amazon.com
+
+Step 2:
+
+Click:
+👉 Create an AWS Account
+
+Step 3:
+
+Enter:
+
+Email ID
+Password
+Account name
+
+Click Continue
+
+Step 4:
+
+Select:
+👉 Personal account
+
+Step 5:
+
+Enter details:
+
+Name
+Phone number
+Address
+
+Click Continue
+
+Step 6:
+
+Enter:
+👉 Debit/Credit card details
+(Small ₹2–₹10 charge for verification)
+
+Step 7:
+
+Phone verification:
+👉 Enter OTP
+
+Step 8:
+
+Select plan:
+👉 Basic (Free)
+
+Step 9:
+
+Login to:
+👉 AWS Management Console
+
+🔷 🔹 PART B: Create Budget
+Step 1:
+
+Click top-right:
+👉 Your name → Billing & Cost Management
+
+Step 2:
+
+Click:
+👉 Budgets
+
+Step 3:
+
+Click:
+👉 Create budget
+
+Step 4:
+
+Select:
+👉 Cost budget
+
+Step 5:
+
+Set:
+
+Budget: 1
+Period: Monthly
+Step 6:
+
+Set alerts:
+
+80% → warning
+100% → limit
+Step 7:
+
+Enter email → Click Create
+
+
+
+✅ ASSIGNMENT 2: MFA Authentication
+Step 1:
+
+Go to:
+👉 IAM service
+
+Step 2:
+
+Click:
+👉 Users
+
+Step 3:
+
+Select your user
+
+Step 4:
+
+Click:
+👉 Security credentials
+
+Step 5:
+
+Click:
+👉 Assign MFA device
+
+Step 6:
+
+Select:
+👉 Virtual MFA device
+
+Step 7:
+
+Install:
+👉 Google Authenticator app
+
+Step 8:
+
+Scan QR code
+
+Step 9:
+
+Enter 2 OTPs → Click Assign
+
+🎯 Result:
+
+✔ Login now requires OTP

@@ -1,0 +1,28 @@
+Create IAM User with S3 Access
+👉 IAM → Users
+👉 Create user
+👉 Username
+✔ Password (console access)
+👉 Next
+Click:
+👉 Attach policies directly
+Search:👉 AmazonS3FullAccess
+Select it --> next
+
+
+✅ 4: Public S3 Bucket
+👉 S3 service
+👉 Create bucket
+👉 Unique bucket name
+Uncheck:
+❌ Block all public access
+Open bucket → Click:
+👉 Upload
+Add file → Click Upload
+Select uploaded file
+Go to:
+👉 Permissions
+EDIT(read)
+👉 Make public
+Copy:
+👉 Object URL
