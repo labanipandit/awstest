@@ -7,6 +7,7 @@ cd nginx
 ls
 cd site-available
 ls
+sudo chmod 777 default
 sudo nano default
 
 
