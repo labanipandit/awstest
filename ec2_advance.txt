@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Update system
+sudo apt-get update -y
+
+# Install nginx
+sudo apt-get install -y nginx
+sudo systemctl start nginx
+sudo systemctl enable nginx
+
+# Install git
+sudo apt-get install -y git
+
+# Install Node.js
+curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+# Install PM2 (important for background run)
+sudo npm install -g pm2
+
+# Clone project
+git clone https://github.com/labanipandit/AWS1.git
+cd aws
+
+# Install dependencies
+npm install
+
+# Run app in background
+pm2 start index.js
+pm2 save
