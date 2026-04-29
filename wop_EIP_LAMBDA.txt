@@ -1,0 +1,16 @@
+12)--deploy withoutport--
+ins--security group--ec2_avd--launch
+connect
+pwd.........
+
+14)EC2 -- EIP--allocate
+action-associate EIP add
+instace-allocate
+check instance
+action--disallocate--relase
+
+
+15)lambda
+function create--code--deploy
+test(topbar)--save-test
+congig-funURL--COPY

@@ -1,0 +1,35 @@
+--Deploy Project from GitHub to EC2--
+
+ec2 -- instance(adv) -- 3checkbox/security -- security group
+inbound rules edit -- add -- ctcp 4000
+bitvise -- terminal --
+
+
+10)----GitHub --> EC2(security group+user data)-----
+
+ec2 -- sg --create -- inbound add (https,http,ssh anywhere)ctcp(4000)
+existing instance -- (ec2_adv) -- launch -- connect -- run nginx -- 
+sudo apt update -y
+sudo apt install nginx -y
+curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt install nodejs -y
+git clone https://github.com/labanipandit/AWS1.git
+cd AWS1
+ls
+npm install
+node index.js
+sudo lsof -i :4000
+sudo kill -9 1234
+run ipv4
+
+
+11)---scaling plane---
+
+create templete --on guidance
+ --quick start --ubuntu--t3.micro--key
+ --seurity group--userdata(ec2_adv)-launch
+autoscaling group--use same temp--complete7steps
+--3avil zone--balancedbest effort
+attach new load balancer--appliLB--
+Internetfacing--createTargetGroup--
+desiredcap=2,min 2,max 3,targettrakingsp 30
